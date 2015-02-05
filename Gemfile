@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
+gem 'bcrypt'
 gem 'bootstrap-sass'
 gem 'mysql2'
 gem 'sass-rails', '~> 4.0.3'
@@ -12,12 +13,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 group :development, :test do
-group :development, :test do
-  gem 'spring'
-  gem 'byebug'
-  gem 'web-console'
-end
-
   gem 'spring'
   gem 'byebug'
   gem 'web-console'
