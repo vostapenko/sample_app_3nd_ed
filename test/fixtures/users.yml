@@ -1,1 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+vitaly:
+  name: Vitaly Ostapenko
+  email: ostapenko.vitaly@gmail.com
+  password_digest: <%= User.digest('zx12as') %>
