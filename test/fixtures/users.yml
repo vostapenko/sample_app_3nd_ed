@@ -1,6 +1,44 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+admin:                                        
+  name: VSite Administrator                       
+  email: admin@gmail.com            
+  password_digest: <%= User.digest('zx12as') %>
+  admin: true
+
 vitaly:
   name: Vitaly Ostapenko
   email: ostapenko.vitaly@gmail.com
   password_digest: <%= User.digest('zx12as') %>
+
+nicolas:
+  name: Nicolas Klarus
+  email: klarus.nicolas@gmail.com
+  password_digest: <%= User.digest('zx12as') %>
+
+michael:
+  name: Michael Example
+  email: michael@example.com
+  password_digest: <%= User.digest('password') %>
+
+archer:
+  name: Sterling Archer
+  email: duchess@example.gov
+  password_digest: <%= User.digest('password') %>
+
+lana:
+  name: Lana Kane
+  email: hands@example.gov
+  password_digest: <%= User.digest('password') %>
+
+mallory:
+  name: Mallory Archer
+  email: boss@example.gov
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>
